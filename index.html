@@ -20,7 +20,25 @@
 		  cursor: pointer;
 		  border-radius: 15px;
           font-family: 'Courier New', Courier, monospace;
+          position: relative;
 		}
+        
+        .button span {
+            position: relative;
+            animation: blink 1.5s infinite;
+        }
+        
+        @keyframes blink {
+            0% {
+                opacity: 0.2;
+            }
+            20% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.2;
+            }
+        }
 
 		@media only screen and (max-width: 600px) {
 		  /* adjust the size of the og:image for smaller screens */
@@ -57,7 +75,7 @@
 <body>
 	<img src="5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg" alt="Hande and Fatih">
 	<div class="button-container">
-	    <button class="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeNzSJVzvu0XXvj5qPicIfascvKxAsYyEHO42rf8TB99XiZ4w/viewform'">Join Us</button>
+	    <button class="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeNzSJVzvu0XXvj5qPicIfascvKxAsYyEHO42rf8TB99XiZ4w/viewform'"><span>&#10084; Join Us &#10084;</span></button>
     </div>
 </body>
 </html>
