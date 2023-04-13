@@ -1,45 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Hande & Fatih Wedding</title>
-	<meta property="og:image" content="5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg">
-	<meta property="og:image:width" content="1200">
-	<meta property="og:image:height" content="630">
-	<style>
-		.button {
-		  background-color: #948878;
-		  border: none;
-		  color: white;
-		  padding: 16px 32px;
-		  text-align: center;
-		  text-decoration: none;
-		  display: inline-block;
-		  font-size: 24px;
-		  margin: 4px 2px;
-		  cursor: pointer;
-		  border-radius: 25px;
-		  margin-left: 20px;		
-		}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hande & Fatih Wedding</title>
+  <meta property="og:image" content="5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <style>
+    .button {
+      background-color: #948878;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 24px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 25px;
+      position: absolute;
+      left: 50%;
+      bottom: 10%;
+      transform: translate(-50%, -50%);
+    }
 
-		@media only screen and (max-width: 600px) {
-		  /* adjust the size of the og:image for smaller screens */
-		  meta[property="og:image"] {
-		    content: "5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg";
-		  }
-		  meta[property="og:image:width"] {
-		    content: "600";
-		  }
-		  meta[property="og:image:height"] {
-		    content: "315";
-		  }
+    .button img {
+      height: 40px;
+      margin-right: 10px;
+    }
 
-		}
-	</style>
+    @media only screen and (max-width: 600px) {
+      /* adjust the size of the og:image for smaller screens */
+      meta[property="og:image"] {
+        content: "5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg";
+      }
+      meta[property="og:image:width"] {
+        content: "600";
+      }
+      meta[property="og:image:height"] {
+        content: "315";
+      }
+
+      .button {
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 15px;
+      }
+
+      .button img {
+        height: 30px;
+        margin-right: 5px;
+      }
+    }
+  </style>
 </head>
 <body>
-	<img src="5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg" alt="Hande and Fatih" style="max-width: 100%;">
-	<br>
-	<button class="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeNzSJVzvu0XXvj5qPicIfascvKxAsYyEHO42rf8TB99XiZ4w/viewform'">Katıl/Join</button>
+  <img src="5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg" alt="Hande and Fatih" style="max-width: 100%;">
+  <br>
+  <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSeNzSJVzvu0XXvj5qPicIfascvKxAsYyEHO42rf8TB99XiZ4w/viewform">
+    <img src="https://www.google.com/images/about/forms-icon.svg" alt="Google Forms">
+    Katıl/Join
+  </a>
 </body>
 </html>
