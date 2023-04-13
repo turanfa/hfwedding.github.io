@@ -2,41 +2,41 @@
 <html>
 <head>
 	<title>Hande & Fatih Wedding</title>
+	<meta property="og:image" content="5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
 	<style>
-		.container {
-			text-align: center;
-			margin: 0 auto;
-			max-width: 600px;
-		}
 		.button {
-			background-color: #948878;
-			border: none;
-			color: white;
-			padding: 16px 32px;
-			text-align: center;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 24px;
-			margin: 4px 2px;
-			cursor: pointer;
-			border-radius: 25px;
-			margin-left: 20px;
+		  background-color: #948878;
+		  border: none;
+		  color: white;
+		  padding: 16px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 24px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		  border-radius: 25px;
 		}
-		@media (max-width: 600px) {
-			.container {
-				max-width: 100%;
-			}
-			.button {
-				margin-left: 10px;
-			}
+
+		@media only screen and (max-width: 600px) {
+		  /* adjust the size of the og:image for smaller screens */
+		  meta[property="og:image"] {
+		    content: "5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg";
+		  }
+		  meta[property="og:image:width"] {
+		    content: "600";
+		  }
+		  meta[property="og:image:height"] {
+		    content: "315";
+		  }
 		}
 	</style>
 </head>
 <body>
-	<div class="container">
-		<img src="5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg" alt="Hande and Fatih">
-		<br>
-		<button class="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeNzSJVzvu0XXvj5qPicIfascvKxAsYyEHO42rf8TB99XiZ4w/viewform'">Katıl/Join</button>
-	</div>
+	<img src="5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg" alt="Hande and Fatih">
+	<br>
+	<button class="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeNzSJVzvu0XXvj5qPicIfascvKxAsYyEHO42rf8TB99XiZ4w/viewform'">Katıl/Join</button>
 </body>
 </html>
