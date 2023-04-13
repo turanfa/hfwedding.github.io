@@ -2,57 +2,62 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Hande & Fatih Wedding</title>
+	<title>Hande &amp; Fatih Wedding</title>
 	<meta property="og:image" content="5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg">
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
 	<style>
-		body {
-			margin: 0;
-			padding: 0;
-			min-height: 100vh;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: space-between;
-		}
-
 		.button {
-			background-color: #948878;
-			border: none;
-			color: white;
-			padding: 12px 24px;
-			text-align: center;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 16px;
-			margin: 4px 2px;
-			cursor: pointer;
-			border-radius: 15px;
-			margin-left: 20px;
-			font-family: 'Helvetica Neue', sans-serif;
+		  background-color: #948878;
+		  border: none;
+		  color: white;
+		  padding: 12px 24px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 20px;
+		  margin: 20px auto 0 auto;
+		  cursor: pointer;
+		  border-radius: 15px;
+          font-family: 'Courier New', Courier, monospace;
 		}
 
 		@media only screen and (max-width: 600px) {
-			/* adjust the size of the og:image for smaller screens */
-			meta[property="og:image"] {
-				content: "5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg";
-			}
-			meta[property="og:image:width"] {
-				content: "600";
-			}
-			meta[property="og:image:height"] {
-				content: "315";
-			}
+		  /* adjust the size of the og:image for smaller screens */
+		  meta[property="og:image"] {
+		    content: "5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg";
+		  }
+		  meta[property="og:image:width"] {
+		    content: "600";
+		  }
+		  meta[property="og:image:height"] {
+		    content: "315";
+		  }
+          
+          .button {
+            font-size: 16px;
+            padding: 10px 20px;
+          }
+          
+          img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+          }
+          
+          .button-container {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 50px;
+          }
 
-			.button:hover {
-				background-color: #b0a59b;
-			}
 		}
 	</style>
 </head>
 <body>
-	<img src="5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg" alt="Hande and Fatih" style="max-width: 100%;">
-	<button class="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeNzSJVzvu0XXvj5qPicIfascvKxAsYyEHO42rf8TB99XiZ4w/viewform'">Click to Join</button>
+	<img src="5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg" alt="Hande and Fatih">
+	<div class="button-container">
+	    <button class="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeNzSJVzvu0XXvj5qPicIfascvKxAsYyEHO42rf8TB99XiZ4w/viewform'">Join Us</button>
+    </div>
 </body>
 </html>
