@@ -19,7 +19,9 @@
 		  margin: 4px 2px;
 		  cursor: pointer;
 		  border-radius: 15px;
-		  margin-left: 20px;		
+		  margin-left: auto;
+      margin-right: auto;
+      display: block;
 		}
 
 		@media only screen and (max-width: 600px) {
@@ -39,12 +41,39 @@
 	      
       }
 
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      img {
+        width: 100%;
+        display: block;
+      }
+
+      .container {
+        position: relative;
+        min-height: 100vh;
+      }
+
+      .content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 20px;
+      }
+
 		}
 	</style>
 </head>
 <body>
-	<img src="5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg" alt="Hande and Fatih" style="max-width: 100%;">
-	<br>
-	<button class="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeNzSJVzvu0XXvj5qPicIfascvKxAsYyEHO42rf8TB99XiZ4w/viewform'">Katıl/Join</button>
+	<div class="container">
+	  <img src="5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg" alt="Hande and Fatih">
+	  <div class="content">
+	    <button class="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeNzSJVzvu0XXvj5qPicIfascvKxAsYyEHO42rf8TB99XiZ4w/viewform'">Katıl/Join</button>
+	  </div>
+	</div>
 </body>
 </html>
