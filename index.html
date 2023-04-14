@@ -28,12 +28,84 @@
             animation: blink 1.5s infinite;
         }
         
-        .leaf-icon:before {
-            content: url('5BCBC3C7-5198-409D-BD7D-CEAF11FA3D94.jpeg');
-            display: inline-block;
-            margin-right: 5px;
-            height: 20px;
-            vertical-align: middle;
+        @keyframes blink {
+            0% {
+                opacity: 0.2;
+            }
+            20% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.2;
+            }
+        }
+
+		@media only screen and (max-width: 600px) {
+		  /* adjust the size of the og:image for smaller screens */
+		  meta[property="og:image"] {
+		    content: "5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg";
+		  }
+		  meta[property="og:image:width"] {
+		    content: "600";
+		  }
+		  meta[property="og:image:height"] {
+		    content: "315";
+		  }
+          
+          .button {
+            font-size: 16px;
+            padding: 10px 20px;
+          }
+          
+          img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+          }
+          
+          .button-container {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 50px;
+          }
+
+		}
+	</style>
+</head>
+<body>
+	<img src="5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg" alt="Hande and Fatih">
+	<div class="button-container">
+	    <button class="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeNzSJVzvu0XXvj5qPicIfascvKxAsYyEHO42rf8TB99XiZ4w/viewform'"><span>&#10084; Kayıt için Tıklayın &#10084;</span></button>
+    </div>
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hande &amp; Fatih Wedding</title>
+	<meta property="og:image" content="5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<style>
+		.button {
+		  background-color: #948878;
+		  border: none;
+		  color: white;
+		  padding: 12px 24px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 20px;
+		  margin: 20px auto 0 auto;
+		  cursor: pointer;
+		  border-radius: 15px;
+          font-family: 'Courier New', Courier, monospace;
+          position: relative;
+		}
+        
+        .button span {
+            position: relative;
+            animation: blink 1.5s infinite;
         }
         
         @keyframes blink {
@@ -83,7 +155,7 @@
 <body>
 	<img src="5D32BECD-1738-48F0-9D10-FCDC70D26C50.jpeg" alt="Hande and Fatih">
 	<div class="button-container">
-	    <button class="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeNzSJVzvu0XXvj5qPicIfascvKxAsYyEHO42rf8TB99XiZ4w/viewform'"><span class="leaf-icon"></span>Kayıt için Tıklayın<span class="leaf-icon"></span></button>
+	    <button class="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeNzSJVzvu0XXvj5qPicIfascvKxAsYyEHO42rf8TB99XiZ4w/viewform'"><span>&#8734; Kayıt için Tıklayın &#8734;</span></button>
     </div>
 </body>
 </html>
